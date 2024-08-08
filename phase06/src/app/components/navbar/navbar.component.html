@@ -1,0 +1,32 @@
+<div class="navbar">
+  <a routerLink="" routerLinkActive="active" ariaCurrentWhenActive="page">
+    <span class="nav-icon"><mat-icon matSuffix>home</mat-icon></span>
+    <span class="nav-text" mat-icon-button>Home</span>
+  </a>
+  <a
+    routerLink="/manage-books"
+    routerLinkActive="active"
+    ariaCurrentWhenActive="page"
+  >
+    <span class="nav-icon"><mat-icon matSuffix>edit_square</mat-icon></span>
+    <span class="nav-text" mat-icon-button>Manage</span>
+  </a>
+  <div class="bottom-aligned">
+    <button mat-icon-button (click)="changeTheme()">
+      <mat-icon class="theme-toggle" id="themeChangerIcon">dark_mode</mat-icon>
+    </button>
+  </div>
+</div>
+
+<div class="top-nav-container">
+  <div class="logo-container">
+    <a routerLink="" routerLinkActive="active" ariaCurrentWhenActive="page">
+      <mat-icon class="logo-icon"> menu_book </mat-icon>
+    </a>
+  </div>
+  <mat-form-field appearance="fill" subscriptSizing="dynamic">
+    <mat-label>Search...</mat-label>
+    <input matInput id="search" type="text" (input)="search($event)" />
+    <mat-icon matSuffix>search</mat-icon>
+  </mat-form-field>
+</div>
