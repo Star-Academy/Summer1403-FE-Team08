@@ -1,0 +1,41 @@
+:host {
+  .add-btn {
+    padding-block-end: 16px;
+  }
+
+  .container {
+    &__table {
+      inline-size: 100%;
+      padding: 0.5rem 1rem;
+      border-radius: 12px;
+      background-color: var(--bg-color);
+
+      &__img {
+        block-size: 100px;
+        border-radius: 5px;
+        padding: 0.5rem 0;
+      }
+
+      &__chips {
+        margin: 0 0.1rem;
+        cursor: pointer;
+      }
+
+      &__delete {
+        color: #ba1a1a;
+      }
+
+      &__edit {
+        color: #005cbb;
+      }
+
+      &__icon {
+        cursor: pointer;
+      }
+
+      tr {
+        color: var(--black-white);
+      }
+    }
+  }
+}

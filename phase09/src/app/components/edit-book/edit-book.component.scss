@@ -1,0 +1,19 @@
+.form {
+  &__img {
+    padding-inline-start: 1rem;
+    border-radius: 12px;
+  }
+
+  &__field {
+    inline-size: 46%;
+    padding: 1rem;
+  }
+
+  &__hint {
+    color: var(--text-color);
+  }
+
+  &__block {
+    padding-inline: 1rem;
+  }
+}
