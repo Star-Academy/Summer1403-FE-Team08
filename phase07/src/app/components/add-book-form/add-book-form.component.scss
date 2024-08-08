@@ -1,0 +1,12 @@
+:host {
+  .form-field {
+    width: 46%;
+    padding: 1rem;
+    .hint {
+      color: var(--text-color);
+    }
+  }
+  .submit-btn {
+    margin: 1rem;
+  }
+}

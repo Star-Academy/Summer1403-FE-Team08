@@ -1,0 +1,44 @@
+:host {
+  .add-button-container {
+    padding-bottom: 16px;
+  }
+
+  .table {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    background-color: var(--bg-color);
+
+    .book-image {
+      height: 100px;
+      border-radius: 5px;
+      padding: 0.5rem 0;
+    }
+
+    .genre-chips {
+      margin: 0 0.1rem;
+      cursor: pointer;
+    }
+
+    .link {
+      text-decoration: none;
+      color: var(--logo-color);
+    }
+
+    .icons {
+      cursor: pointer;
+    }
+
+    .error-icon {
+      color: #ba1a1a;
+    }
+
+    .edit-icon {
+      color: #005cbb;
+    }
+  }
+
+  .table-row {
+    color: var(--logo-color);
+  }
+}

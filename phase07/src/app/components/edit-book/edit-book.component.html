@@ -1,0 +1,72 @@
+<form [formGroup]="newBookForm" (ngSubmit)="handleSubmit()">
+  <img [src]="book.image_url_m" class="book-image" /><br />
+  <mat-form-field appearance="fill" class="form-field">
+    <mat-label>Name</mat-label>
+    <input
+      matInput
+      placeholder="Name"
+      required
+      type="text"
+      formControlName="name"
+      id="name"
+    />
+  </mat-form-field>
+  <mat-form-field appearance="fill" class="form-field">
+    <mat-label>Image</mat-label>
+    <input
+      matInput
+      placeholder="Image"
+      required
+      type="text"
+      formControlName="image"
+      id="image"
+    />
+    <mat-hint class="hint">Image link here</mat-hint>
+  </mat-form-field>
+  <mat-form-field appearance="fill" class="form-field">
+    <mat-label>Author</mat-label>
+    <input
+      matInput
+      placeholder="Author"
+      required
+      type="text"
+      formControlName="author"
+      id="author"
+    />
+  </mat-form-field>
+  <mat-form-field appearance="fill" class="form-field">
+    <mat-label>Publish Date</mat-label>
+    <input
+      matInput
+      placeholder="Publish Date"
+      required
+      type="text"
+      formControlName="publishData"
+      id="publishData"
+    />
+  </mat-form-field>
+  <mat-form-field appearance="fill" class="form-field">
+    <mat-label>Genre</mat-label>
+    <input
+      matInput
+      placeholder="Genre"
+      required
+      type="text"
+      formControlName="genre"
+      id="genre"
+    />
+    <mat-hint class="hint">seperate using comma -> x,y,z</mat-hint>
+  </mat-form-field>
+  <mat-form-field appearance="fill" class="form-field">
+    <mat-label>Price</mat-label>
+    <input
+      matInput
+      placeholder="Price"
+      required
+      type="text"
+      formControlName="price"
+      id="price"
+    />
+  </mat-form-field>
+  <button mat-flat-button type="submit" class="submit-button">Edit book</button>
+</form>
