@@ -1,0 +1,66 @@
+.book-details-container {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  box-sizing: border-box;
+}
+
+.book-details-image-container {
+  width: 26%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+}
+mat-card-header {
+  align-items: center;
+}
+.book-details-detail-container {
+  padding: 1rem;
+  flex-direction: column;
+  background-color: var(--card-bg);
+  color: var(--black-white);
+}
+
+.mat-mdc-card-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  box-sizing: border-box;
+  min-height: 52px;
+  padding: 8px;
+}
+mat-card-title {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+.genres {
+  padding-bottom: 1rem;
+  * {
+    margin-right: 0.25rem;
+  }
+}
+.card-container {
+  width: 100%;
+}
+mat-divider {
+  margin: 1rem 0;
+}
+.author {
+  font-size: 1.5rem;
+}
+h2 {
+  margin: 0;
+}
+mat-icon {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
